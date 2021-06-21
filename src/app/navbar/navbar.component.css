@@ -1,0 +1,19 @@
+.navbar-brand{
+    margin-left: 25px;
+}
+.navbar-nav{
+    margin-left: 30px;
+}
+.nav-item{
+    margin-left: 5px;
+}
+/* .navbar{
+    position: relative;
+*/
+
+.button{
+    margin-left: 10px;
+} 
+.btn{
+    margin-left: 5px;
+}

@@ -1,0 +1,65 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="#">New York Times </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/world"> World </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/politics">Politics</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" routerLink="/us"> U.S </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/opinion">Opinion</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/arts"> arts </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/travel"> Travel </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/tech">Tech</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/book">Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/business">Business</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/ny"> N.Y. </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/health">Health</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/style"> Style </a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/spots"> Spots </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/science">Science</a>
+          </li>
+       
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/maganize" >Maganize</a>
+        </li>
+      </ul>
+      <div class="d-flex my-2">
+        <input class="form-control" [(ngModel)]="key" type="text" placeholder="search">
+        <button class="btn btn-primary" (click)="news()">Search</button>
+      </div>
+     
+      <button class="button" (click)="logout()">Logout</button>
+    </div>
+  </nav>

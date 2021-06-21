@@ -1,0 +1,23 @@
+<div>
+    <h1 style="padding: 5px;">POLITICS</h1>
+    <hr>
+    <div class="container-fluid">
+      <div class="row">
+    <div class="card mx-auto my-3" style="width: 20rem;" *ngFor="let politic of politics">
+      <img class="card-img-top" src="{{politic.multimedia[2].url}}" alt="Card image cap">
+      <div class="card-body">
+        <h6 class="card-title text-center mb-3" style="color: red;">
+           {{politic.title}}
+        </h6>
+        <div class="heading text-center">{{politic.abstract}}</div>
+            <div class="text-center mt-3"> published {{politic.byline}} </div> 
+            <div class="text-center mt-3"> on {{politic.created_date}} , {{politic.section}}</div>
+          <div class="text-center mt-4">
+            <a href="{{politic.url}}" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+          </div>
+          </div>
+          </div> 
+          </div>
+  

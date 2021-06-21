@@ -1,0 +1,22 @@
+<div>
+  <h1 style="padding: 5px;">ARTS</h1>
+  <hr>
+
+<div class="container-fluid">
+    <div class="row">
+  <div class="card mx-auto my-3" style="width: 20rem;" *ngFor="let art of arts">
+    <img class="card-img-top" src="{{art.multimedia[2].url}}" alt="Card image cap">
+    <div class="card-body">
+      <h6 class="card-title text-center mb-3" style="color: red;">
+         {{art.title}}
+      </h6>
+      <div class="heading text-center">{{art.abstract}}</div>
+          <div class="text-center mt-3"> published {{art.byline}} </div> 
+          <div class="text-center mt-3"> on {{art.created_date}} , {{art.section}}</div>
+        <div class="text-center mt-4">
+          <a href="{{art.url}}" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+        </div>
+        </div>
+        </div>

@@ -1,0 +1,22 @@
+<div>
+    <h1 style="padding: 5px;">HEALTH</h1>
+    <hr>
+    <div class="container-fluid">
+      <div class="row">
+    <div class="card mx-auto my-3" style="width: 20rem;" *ngFor="let health of healths">
+      <img class="card-img-top" src="{{health.multimedia[2].url}}" alt="Card image cap">
+      <div class="card-body">
+        <h6 class="card-title text-center mb-3" style="color: red;">
+           {{health.title}}
+        </h6>
+        <div class="heading text-center">{{health.abstract}}</div>
+            <div class="text-center mt-3"> published {{health.byline}} </div> 
+            <div class="text-center mt-3"> on {{health.created_date}} , {{health.section}}</div>
+          <div class="text-center mt-4">
+            <a href="{{health.url}}" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+          </div>
+          </div>
+          </div>
+    </div>
